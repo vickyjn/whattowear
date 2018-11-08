@@ -1,0 +1,55 @@
+.card-view {
+    display: inline-block;
+    width: 16.4rem;
+    margin: 10px 5px;
+}
+.card-view:nth-child(2) {
+    margin-left: 0;
+}
+.card-view:last-child {
+    margin-right: 0;
+}
+
+.info{
+    font-size: 13px;
+}
+
+footer {
+    padding: 5px;
+   /* background: orange;*/
+   background: #c0cfff;
+    color: black;
+    text-align: center;
+}
+
+
+.card-view img {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+@media (max-width: 1080px) and (min-width: 680px) {    
+    .card-view {
+        width: calc(25% - 10px);
+    }
+}
+
+@media (max-width: 680px) and (min-width: 480px) {    
+    .card-view {
+        width: calc(50% - 10px);
+    }
+    .nextFour{
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 480px) {    
+    .card-view {
+        width: calc(100% - 10px);
+    }
+
+    .nextFour{
+        width: calc(100% - 10px);
+    }
+}

@@ -1,0 +1,14 @@
+.axis--x path {
+    /* display: none; */
+}
+h2 {
+    font-size: 18px;
+    padding: 8px 0 0 8px;
+    font-weight: normal;
+    color: #4a4a4a;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}

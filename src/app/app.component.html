@@ -1,0 +1,24 @@
+<app-loading [show]="showLoading"></app-loading>
+<app-head-block [config]="config" [data]="weatherData" [sQuery]="city" [currentDate]="dateGroups" (updateLocationString)="getWeatherString($event)" (updateLocation)="resetLocation($event)"></app-head-block>
+<mat-toolbar class="nextFour">Next 4 Days</mat-toolbar>
+<div class="container">
+    
+    <div class="today card-view" *ngFor="let pData of dateGroups; let i = index;" [ngStyle]="{'display': ((i && i < 5) ? 'inline-block' : 'none')}">
+        <mat-card class="wear-card">
+            <mat-card-header>
+                <mat-card-title>{{pData.date | date}} :{{pData.temp | number:'1.0-0'}} &deg; C &nbsp; {{pData.climate}}</mat-card-title>
+            </mat-card-header>
+                <div *ngIf="i">
+                    <img mat-card-image [src]="'assets/images/'+pData.img" [alt]="pData.title">
+                    <mat-card-footer>
+                            <h6>Suggested Wear:</h6>
+                            <p class='info'>  {{pData.desc}}</p>
+                      
+                    </mat-card-footer>
+                </div>
+        </mat-card>
+    </div>
+</div>
+<footer>
+    <div class="container">&copy;Woods-WhatToWear</div>
+</footer>

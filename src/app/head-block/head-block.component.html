@@ -1,0 +1,37 @@
+<div class="slider-bg">
+  <div class="overlay">
+    <div class="container">
+     
+   <span>  
+   
+    <a href="#" class="headTitle">What To Wear</a></span>
+      <div class="locate">
+        <input *ngIf="showEdit" type="text" [(ngModel)]="sQuery">
+        <i title="Get my location" (click)="getLocation()"></i>
+        <span *ngIf="!showEdit">Place: {{sQuery}}</span>
+        <button *ngIf="!showEdit" (click)="showEdit = true;" mat-flat-button>Change</button>
+        <button *ngIf="showEdit" (click)="setNewLocation(); showEdit = false;" mat-flat-button>Update</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="svg-view">
+        <app-multi-line *ngIf="data && data.length" [valueData]="data"></app-multi-line>
+      </div>
+      <div class="today card-view">
+        <mat-card class="wear-card">
+          <mat-card-header>
+            <mat-card-title *ngIf="currentDate">Today : {{currentDate[0].temp | number:'1.0-0'}}&deg; C &nbsp;   {{currentDate[0].climate}}</mat-card-title>
+          
+          </mat-card-header>
+          <div *ngIf="currentDate && currentDate[0]">
+            <img mat-card-image [src]="'assets/images/'+currentDate[0].img" [alt]="currentDate[0].title">
+            <mat-card-footer > 
+              <h6>Suggested Wear:</h6>
+              <p class='info'>{{currentDate[0].desc}}</p>
+            </mat-card-footer>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

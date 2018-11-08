@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "min": 5,
+        "max": 15,
+        "climate": "Rainy",
+        "title": "Woods Men’s Joffre 2-Layer Everyday Rain Jacket",
+        "image": "1.png",
+        "temp":null
+    },
+    {
+        "id": 2,
+        "min": -15,
+        "max": 5,
+        "climate": "Rainy",
+        "title": "Rainy Woods Men's Burgess Insulated Jacket",
+        "image": "2.png",
+        "temp":null
+    },
+    {
+        "id": 3,
+        "min": -15,
+        "max": 5,
+        "climate":"Clear",
+        "title": "Woods Men’s Joffre 2-Layer Everyday Rain Jacket",
+        "image": "3.png",
+        "temp":null
+    },
+    {
+        "id": 4,
+        "min": -50,
+        "max": -15,
+        "climate": "Snow",
+        "title": "Woods Men's Alverstone Iconic Expedition Down Parka",
+        "image": "4.png",
+        "temp":null
+    },
+    {
+        "id": 5,
+        "min": 15,
+        "max": 5000,
+        "climate": "Clear",
+        "title": "Woods Men's Michener Performance Short Sleeve Shirt",
+        "image": "5.png",
+        "temp":null
+    }
+]
