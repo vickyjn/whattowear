@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
+## Installation Instruction
+
+Step 1. Clone the repository to local
+Step 2. Run `npm install` to install the dependencies
+Step 3. Run `ng serve`. Navigate to `http://localhost:4200/`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
